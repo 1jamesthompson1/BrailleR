@@ -458,7 +458,7 @@ VI.ggplot = function(x, Describe=FALSE, threshold=10, template=system.file("whis
       if (.getGGSmoothSEflag(x, xbuild, layeri)) {
         shadedproportion = .getGGShadedArea(x, xbuild, layeri)*100
         layer$shadedarea = shadedproportion |>
-          round( 2) |>
+          signif(digits=2) |>
           toString() |>
           paste("%", sep="")
       }
