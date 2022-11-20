@@ -139,6 +139,16 @@ There are {{noutliers}} outliers for this boxplot.<br>
 {{#typesmooth}}
 a '{{method}}' smoothed curve{{#ci}} with {{level}} confidence intervals{{/ci}}.
 {{/typesmooth}}
+{{#typeribbon}}
+a ribbon 
+{{^noybounds}}
+{{^nonconstantribbonwidth}}with a constant width of {{ribbonwidth}} and centers are{{/nonconstantribbonwidth}}
+{{#nonconstantribbonwidth}}with non constant widths: {{ribbonwidth}} and centers at{{/nonconstantribbonwidth}}
+{{#constantcentre}} constant{{/constantcentre}}: {{centre}}.{{/noybounds}}
+{{#noybounds}}with no y bounds covering entire y range.{{/noybounds}}
+{{^noxbounds}} It has{{^nonconstantribbonlength}} a constant length{{/nonconstantribbonlength}}{{#nonconstantribbonlength}} non constant lengths{{/nonconstantribbonlength}} of: {{ribbonlength}}.{{/noxbounds}}
+<br>
+{{/typeribbon}}
 {{#typeunknown}}
 {{anA}} {{assign}} graph that VI can not process.<br>
 {{/typeunknown}}

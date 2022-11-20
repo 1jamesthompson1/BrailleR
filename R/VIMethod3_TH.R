@@ -454,7 +454,57 @@ VI.ggplot = function(x, Describe=FALSE, threshold=10, template=system.file("whis
       #adding confidence level as a percentage
       deci = toString(.getGGSmoothLevel(x, xbuild, layeri)*100)
       layer$level = paste(deci, "%", sep = "")
+      
+      #RIBBON
+    } else if (layerClass == "GeomRibbon") {
+      layer$type = "ribbon"
+      data = xbuild$data[[layeri]]
+      
+      widthIntervals = seq(from=1, to=length(data$y), length.out=5)
+      layer$intervalPoints = data$x[widthIntervals] |> paste(collapse=", ")
+      
+      #Width of the ribbon
+      yMin = data$ymin
+      yMax = data$ymax
+      
+      width = yMax-yMin
+      if (is.null(yMin) && is.null(yMax)) { #No bounds
+        layer$noybounds = T
+      } else if (length(unique(width)) != 1) { #Non constant width
+        layer$nonconstantribbonwidth = T
+        layer$ribbonwidth = width[widthIntervals] |> signif()  |> paste(collapse=", ")
+      } else { #Constant width
+        layer$ribbonwidth = width[1]
+      }
+      
+      #Length of the ribbon
+      xMin = data$xmin
+      xMax = data$xmax
+      length = abs(xMin - xMax)
+      if ((is.null(xMin) && is.null(xMax)) || !is.null(layer$ribbonwidth)){
+        layer$noxbounds = T
+      } else if (length(unique(length)) != 1) { #Non constant length
+        layer$nonconstantribbonlength = T
+        layer$ribbonlength = length[widthIntervals] |> signif()  |> paste(collapse=", ")
+      } else {
+        layer$ribbonlength = mean(abs(xMax-xMin))
+      }
+      
+      #Shape of ribbon
+      # Only showing the shape info when there is y bounds
+      if (!is.null(data$ymin) || is.null(data$ymax)) { #Has min and max
+        centres = (yMax + yMin)[widthIntervals] |>
+          map(~ signif((.x / 2)) )
+        if (length(unique(centres)) == 1) { # Centre is constant
+          layer$constantcentre = T
+          layer$centre = centres[1]
+        } else { #Centre non constant turn into string
+          layer$centre = centres |>
+            paste(collapse=", ")
+        }
+      }
 
+      
       #U UNKNOWN
     } else {
       layer$type = "unknown"
