@@ -146,7 +146,7 @@ a ribbon
 {{#nonconstantribbonwidth}}with non constant widths: {{ribbonwidth}} and centers at{{/nonconstantribbonwidth}}
 {{#constantcentre}} constant{{/constantcentre}}: {{centre}}.{{/noybounds}}
 {{#noybounds}}with no y bounds covering entire y range.{{/noybounds}}
-{{^noxbounds}} It has{{^nonconstantribbonlength}} a constant length{{/nonconstantribbonlength}}{{#nonconstantribbonlength}} non constant lengths{{/nonconstantribbonlength}} of: {{ribbonlength}}.{{/noxbounds}}
+{{^noxbounds}} It has{{^nonconstantribbonlength}} a constant length{{/nonconstantribbonlength}}{{#nonconstantribbonlength}} non constant lengths{{/nonconstantribbonlength}} of: {{ribbonlength}}.{{/noxbounds}} The ribbon takes up {{shadedarea}} of the graph.
 <br>
 {{/typeribbon}}
 {{#typeunknown}}

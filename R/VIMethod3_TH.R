@@ -456,11 +456,7 @@ VI.ggplot = function(x, Describe=FALSE, threshold=10, template=system.file("whis
       layer$level = paste(deci, "%", sep = "")
       
       if (.getGGSmoothSEflag(x, xbuild, layeri)) {
-        shadedproportion = .getGGShadedArea(x, xbuild, layeri)*100
-        layer$shadedarea = shadedproportion |>
-          round( 2) |>
-          toString() |>
-          paste("%", sep="")
+        layer$shadedarea = .getGGShadedArea(x, xbuild, layeri)*100
       }
       
       #RIBBON
@@ -511,7 +507,9 @@ VI.ggplot = function(x, Describe=FALSE, threshold=10, template=system.file("whis
             paste(collapse=", ")
         }
       }
-
+      
+      #Shaded area
+      layer$shadedarea = .getGGShadedArea(x, xbuild, layeri)
       
       #U UNKNOWN
     } else {
