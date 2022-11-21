@@ -314,6 +314,8 @@
   return(AnA)
 }
 
+#Get the area which is filled in by the ymin and ymax found in the layer.
+#Useful for geomRibbon and geomSmooth
 .getGGShadedArea = function(x, xbuild, layer) {
   data = xbuild$data[[layer]]
   
@@ -336,7 +338,14 @@
   shadedArea = sum(abs(distances) * abs(width))
   totalArea = (xaxis[2] - xaxis[1]) * (yaxis[2] - yaxis[1])
   
-  #Return percent
-  return(shadedArea / totalArea )
+  #Get percentage
+  areaProportion = shadedArea / totalArea
+  areaPercentageStr = (areaProportion*100) |>
+    signif(2) |>
+    toString() |>
+    paste("%", sep="")
+  
+  
+  return(areaPercentageStr)
 }
 
