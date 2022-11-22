@@ -464,16 +464,39 @@ VI.ggplot = function(x, Describe=FALSE, threshold=10, template=system.file("whis
       }
       
       #RIBBON
-    } else if (layerClass == "GeomRibbon") {
+    } else if (layerClass == "GeomRibbon" | layerClass == "GeomArea") {
+      # Area is included becuase it is delegated to geomribbon anyways.
+      
       layer$type = "ribbon"
       data = xbuild$data[[layeri]]
-      
-      widthIntervals = seq(from=1, to=length(data$y), length.out=5)
-      layer$intervalPoints = data$x[widthIntervals] |> paste(collapse=", ")
       
       #Width of the ribbon
       yMin = data$ymin
       yMax = data$ymax
+      
+      #Length of the ribbon
+      xMin = data$xmin
+      xMax = data$xmax
+      
+      #actual data
+      x_data = data$x
+      y_data = data$y
+
+      #Removing the leading and trailing 0
+      if(layerClass == "GeomArea") {
+        yMin = yMin[2:(length(yMin)-1)]
+        yMax = yMax[2:(length(yMax)-1)]
+        xMin = xMin[2:(length(xMin)-1)]
+        xMax = xMax[2:(length(xMax)-1)]
+        x_data = x_data[2:(length(x_data)-1)]
+        y_data = y_data[2:(length(y_data)-1)]
+      }
+      
+
+      widthIntervals = seq(from=1, to=length(y_data), length.out=5)
+      layer$intervalPoints = x_data[widthIntervals] |> paste(collapse=", ")
+      
+
       
       width = yMax-yMin
       if (is.null(yMin) && is.null(yMax)) { #No bounds
@@ -485,9 +508,7 @@ VI.ggplot = function(x, Describe=FALSE, threshold=10, template=system.file("whis
         layer$ribbonwidth = width[1]
       }
       
-      #Length of the ribbon
-      xMin = data$xmin
-      xMax = data$xmax
+
       length = abs(xMin - xMax)
       if ((is.null(xMin) && is.null(xMax)) || !is.null(layer$ribbonwidth)){
         layer$noxbounds = T
@@ -500,7 +521,7 @@ VI.ggplot = function(x, Describe=FALSE, threshold=10, template=system.file("whis
       
       #Shape of ribbon
       # Only showing the shape info when there is y bounds
-      if (!is.null(data$ymin) || is.null(data$ymax)) { #Has min and max
+      if (!is.null(yMin) || is.null(yMax)) { #Has min and max
         centres = (yMax + yMin)[widthIntervals] |>
           map(~ signif((.x / 2)) )
         if (length(unique(centres)) == 1) { # Centre is constant
