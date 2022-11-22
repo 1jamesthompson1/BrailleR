@@ -456,7 +456,7 @@ VI.ggplot = function(x, Describe=FALSE, threshold=10, template=system.file("whis
       layer$level = paste(deci, "%", sep = "")
       
       if (.getGGSmoothSEflag(x, xbuild, layeri)) {
-        layer$shadedarea = .getGGShadedArea(x, xbuild, layeri)*100
+        layer$shadedarea = .getGGShadedArea(x, xbuild, layeri)
       }
       
       #RIBBON
