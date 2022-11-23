@@ -456,11 +456,7 @@ VI.ggplot = function(x, Describe=FALSE, threshold=10, template=system.file("whis
       layer$level = paste(deci, "%", sep = "")
       
       if (.getGGSmoothSEflag(x, xbuild, layeri)) {
-        shadedproportion = .getGGShadedArea(x, xbuild, layeri)*100
-        layer$shadedarea = shadedproportion |>
-          signif(digits=2) |>
-          toString() |>
-          paste("%", sep="")
+        layer$shadedarea = .getGGShadedArea(x, xbuild, layeri)
       }
       
       #RIBBON
@@ -475,9 +471,12 @@ VI.ggplot = function(x, Describe=FALSE, threshold=10, template=system.file("whis
       yMin = data$ymin
       yMax = data$ymax
       
+      ybounds = TRUE
+      
       width = yMax-yMin
       if (is.null(yMin) && is.null(yMax)) { #No bounds
         layer$noybounds = T
+        ybounds = FALSE
       } else if (length(unique(width)) != 1) { #Non constant width
         layer$nonconstantribbonwidth = T
         layer$ribbonwidth = width[widthIntervals] |> signif()  |> paste(collapse=", ")
@@ -511,7 +510,14 @@ VI.ggplot = function(x, Describe=FALSE, threshold=10, template=system.file("whis
             paste(collapse=", ")
         }
       }
-
+      
+      #Shaded area
+      if (ybounds) {
+        layer$shadedarea = .getGGShadedArea(x, xbuild, layeri)
+      } else {
+        layer$shadedarea = .getGGShadedArea(x, xbuild, layeri, useX=F)
+      }
+      
       
       #U UNKNOWN
     } else {
