@@ -150,7 +150,7 @@ a ribbon
 <br>
 {{/typeribbon}}
 {{#typeunknown}}
-{{anA}} {{assign}} graph that VI can not process.<br>
+{{anA}} {{assign}} graph that VI cannot process.<br>
 {{/typeunknown}}
 {{#hasPos}}
 These are {{position}} {{mapping2}}.<br>
