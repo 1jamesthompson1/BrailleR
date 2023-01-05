@@ -55,7 +55,7 @@
       </sre:component>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Tick mark 0" speech2="0" type="Value">
+    <sre:annotation speech="Tick mark -1" speech2="-1" type="Value">
       <sre:active>GRID.text.57.1.2</sre:active>
       <sre:position>3</sre:position>
       <sre:parents>
@@ -79,7 +79,7 @@
       </sre:component>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Tick mark 2" speech2="2" type="Value">
+    <sre:annotation speech="Tick mark 0" speech2="0" type="Value">
       <sre:active>GRID.text.57.1.3</sre:active>
       <sre:position>4</sre:position>
       <sre:parents>
@@ -103,6 +103,54 @@
       </sre:component>
       <sre:neighbours/>
     </sre:annotation>
+    <sre:annotation speech="Tick mark 1" speech2="1" type="Value">
+      <sre:active>GRID.text.57.1.4</sre:active>
+      <sre:position>5</sre:position>
+      <sre:parents>
+        <sre:grouped>xaxis</sre:grouped>
+      </sre:parents>
+      <sre:children/>
+      <sre:component>
+        <sre:passive>graphics-plot-1-bottom-axis-ticks-1.1.4</sre:passive>
+      </sre:component>
+      <sre:neighbours/>
+    </sre:annotation>
+    <sre:annotation type="Tick">
+      <sre:passive>graphics-plot-1-bottom-axis-ticks-1.1.4</sre:passive>
+      <sre:position>1</sre:position>
+      <sre:parents>
+        <sre:grouped>xaxis</sre:grouped>
+      </sre:parents>
+      <sre:children/>
+      <sre:component>
+        <sre:active>GRID.text.57.1.4</sre:active>
+      </sre:component>
+      <sre:neighbours/>
+    </sre:annotation>
+    <sre:annotation speech="Tick mark 2" speech2="2" type="Value">
+      <sre:active>GRID.text.57.1.5</sre:active>
+      <sre:position>6</sre:position>
+      <sre:parents>
+        <sre:grouped>xaxis</sre:grouped>
+      </sre:parents>
+      <sre:children/>
+      <sre:component>
+        <sre:passive>graphics-plot-1-bottom-axis-ticks-1.1.5</sre:passive>
+      </sre:component>
+      <sre:neighbours/>
+    </sre:annotation>
+    <sre:annotation type="Tick">
+      <sre:passive>graphics-plot-1-bottom-axis-ticks-1.1.5</sre:passive>
+      <sre:position>1</sre:position>
+      <sre:parents>
+        <sre:grouped>xaxis</sre:grouped>
+      </sre:parents>
+      <sre:children/>
+      <sre:component>
+        <sre:active>GRID.text.57.1.5</sre:active>
+      </sre:component>
+      <sre:neighbours/>
+    </sre:annotation>
     <sre:annotation speech="x axis: x" speech2="x axis: x with values from -2 to 2" type="Axis">
       <sre:grouped>xaxis</sre:grouped>
       <sre:position>2</sre:position>
@@ -114,6 +162,8 @@
         <sre:active>GRID.text.57.1.1</sre:active>
         <sre:active>GRID.text.57.1.2</sre:active>
         <sre:active>GRID.text.57.1.3</sre:active>
+        <sre:active>GRID.text.57.1.4</sre:active>
+        <sre:active>GRID.text.57.1.5</sre:active>
       </sre:children>
       <sre:component>
         <sre:active>GRID.text.65.1</sre:active>
@@ -124,6 +174,10 @@
         <sre:passive>graphics-plot-1-bottom-axis-ticks-1.1.2</sre:passive>
         <sre:active>GRID.text.57.1.3</sre:active>
         <sre:passive>graphics-plot-1-bottom-axis-ticks-1.1.3</sre:passive>
+        <sre:active>GRID.text.57.1.4</sre:active>
+        <sre:passive>graphics-plot-1-bottom-axis-ticks-1.1.4</sre:passive>
+        <sre:active>GRID.text.57.1.5</sre:active>
+        <sre:passive>graphics-plot-1-bottom-axis-ticks-1.1.5</sre:passive>
       </sre:component>
       <sre:neighbours/>
     </sre:annotation>
@@ -147,7 +201,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Tick mark 0" speech2="0" type="Value">
+    <sre:annotation speech="Tick mark 0.0" speech2="0.0" type="Value">
       <sre:active>GRID.text.61.1.1</sre:active>
       <sre:position>2</sre:position>
       <sre:parents>
@@ -171,7 +225,7 @@
       </sre:component>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Tick mark 5" speech2="5" type="Value">
+    <sre:annotation speech="Tick mark 2.5" speech2="2.5" type="Value">
       <sre:active>GRID.text.61.1.2</sre:active>
       <sre:position>3</sre:position>
       <sre:parents>
@@ -195,7 +249,7 @@
       </sre:component>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Tick mark 10" speech2="10" type="Value">
+    <sre:annotation speech="Tick mark 5.0" speech2="5.0" type="Value">
       <sre:active>GRID.text.61.1.3</sre:active>
       <sre:position>4</sre:position>
       <sre:parents>
@@ -219,7 +273,55 @@
       </sre:component>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="y axis: count" speech2="y axis: count with values from 0 to 10" type="Axis">
+    <sre:annotation speech="Tick mark 7.5" speech2="7.5" type="Value">
+      <sre:active>GRID.text.61.1.4</sre:active>
+      <sre:position>5</sre:position>
+      <sre:parents>
+        <sre:grouped>yaxis</sre:grouped>
+      </sre:parents>
+      <sre:children/>
+      <sre:component>
+        <sre:passive>graphics-plot-1-left-axis-ticks-1.1.4</sre:passive>
+      </sre:component>
+      <sre:neighbours/>
+    </sre:annotation>
+    <sre:annotation type="Tick">
+      <sre:passive>graphics-plot-1-left-axis-ticks-1.1.4</sre:passive>
+      <sre:position>1</sre:position>
+      <sre:parents>
+        <sre:grouped>yaxis</sre:grouped>
+      </sre:parents>
+      <sre:children/>
+      <sre:component>
+        <sre:active>GRID.text.61.1.4</sre:active>
+      </sre:component>
+      <sre:neighbours/>
+    </sre:annotation>
+    <sre:annotation speech="Tick mark 10.0" speech2="10.0" type="Value">
+      <sre:active>GRID.text.61.1.5</sre:active>
+      <sre:position>6</sre:position>
+      <sre:parents>
+        <sre:grouped>yaxis</sre:grouped>
+      </sre:parents>
+      <sre:children/>
+      <sre:component>
+        <sre:passive>graphics-plot-1-left-axis-ticks-1.1.5</sre:passive>
+      </sre:component>
+      <sre:neighbours/>
+    </sre:annotation>
+    <sre:annotation type="Tick">
+      <sre:passive>graphics-plot-1-left-axis-ticks-1.1.5</sre:passive>
+      <sre:position>1</sre:position>
+      <sre:parents>
+        <sre:grouped>yaxis</sre:grouped>
+      </sre:parents>
+      <sre:children/>
+      <sre:component>
+        <sre:active>GRID.text.61.1.5</sre:active>
+      </sre:component>
+      <sre:neighbours/>
+    </sre:annotation>
+    <sre:annotation speech="y axis: count" speech2="y axis: count with values from 0.0 to 10.0" type="Axis">
       <sre:grouped>yaxis</sre:grouped>
       <sre:position>3</sre:position>
       <sre:parents>
@@ -230,6 +332,8 @@
         <sre:active>GRID.text.61.1.1</sre:active>
         <sre:active>GRID.text.61.1.2</sre:active>
         <sre:active>GRID.text.61.1.3</sre:active>
+        <sre:active>GRID.text.61.1.4</sre:active>
+        <sre:active>GRID.text.61.1.5</sre:active>
       </sre:children>
       <sre:component>
         <sre:active>GRID.text.68.1</sre:active>
@@ -240,6 +344,10 @@
         <sre:passive>graphics-plot-1-left-axis-ticks-1.1.2</sre:passive>
         <sre:active>GRID.text.61.1.3</sre:active>
         <sre:passive>graphics-plot-1-left-axis-ticks-1.1.3</sre:passive>
+        <sre:active>GRID.text.61.1.4</sre:active>
+        <sre:passive>graphics-plot-1-left-axis-ticks-1.1.4</sre:passive>
+        <sre:active>GRID.text.61.1.5</sre:active>
+        <sre:passive>graphics-plot-1-left-axis-ticks-1.1.5</sre:passive>
       </sre:component>
       <sre:neighbours/>
     </sre:annotation>
@@ -315,7 +423,7 @@
       </sre:component>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 1 at -2.86 with value 1" speech2="Bar 1 between x values -2.97 and -2.75  with y value 1 and density 0.0455" type="Bar">
+    <sre:annotation speech="Bar 1 at -2.025 with value 1" speech2="Bar 1 between x values -2.098 and -1.953  with y value 1 and density 0.0691" type="Bar">
       <sre:active>geom_rect.rect.41.1.1</sre:active>
       <sre:position>1</sre:position>
       <sre:parents>
@@ -325,7 +433,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 2 at -2.64 with value 0" speech2="Bar 2 between x values -2.75 and -2.53  with y value 0 and density 0" type="Bar">
+    <sre:annotation speech="Bar 2 at -1.881 with value 0" speech2="Bar 2 between x values -1.953 and -1.808  with y value 0 and density 0" type="Bar">
       <sre:active>geom_rect.rect.41.1.2</sre:active>
       <sre:position>2</sre:position>
       <sre:parents>
@@ -335,7 +443,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 3 at -2.42 with value 0" speech2="Bar 3 between x values -2.53 and -2.31  with y value 0 and density 0" type="Bar">
+    <sre:annotation speech="Bar 3 at -1.736 with value 2" speech2="Bar 3 between x values -1.808 and -1.664  with y value 2 and density 0.138" type="Bar">
       <sre:active>geom_rect.rect.41.1.3</sre:active>
       <sre:position>3</sre:position>
       <sre:parents>
@@ -345,7 +453,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 4 at -2.2 with value 0" speech2="Bar 4 between x values -2.31 and -2.09  with y value 0 and density 0" type="Bar">
+    <sre:annotation speech="Bar 4 at -1.591 with value 2" speech2="Bar 4 between x values -1.664 and -1.519  with y value 2 and density 0.138" type="Bar">
       <sre:active>geom_rect.rect.41.1.4</sre:active>
       <sre:position>4</sre:position>
       <sre:parents>
@@ -355,7 +463,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 5 at -1.98 with value 2" speech2="Bar 5 between x values -2.09 and -1.87  with y value 2 and density 0.0909" type="Bar">
+    <sre:annotation speech="Bar 5 at -1.447 with value 1" speech2="Bar 5 between x values -1.519 and -1.374  with y value 1 and density 0.0691" type="Bar">
       <sre:active>geom_rect.rect.41.1.5</sre:active>
       <sre:position>5</sre:position>
       <sre:parents>
@@ -365,7 +473,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 6 at -1.76 with value 3" speech2="Bar 6 between x values -1.87 and -1.65  with y value 3 and density 0.136" type="Bar">
+    <sre:annotation speech="Bar 6 at -1.302 with value 2" speech2="Bar 6 between x values -1.374 and -1.23  with y value 2 and density 0.138" type="Bar">
       <sre:active>geom_rect.rect.41.1.6</sre:active>
       <sre:position>6</sre:position>
       <sre:parents>
@@ -375,7 +483,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 7 at -1.54 with value 3" speech2="Bar 7 between x values -1.65 and -1.43  with y value 3 and density 0.136" type="Bar">
+    <sre:annotation speech="Bar 7 at -1.157 with value 3" speech2="Bar 7 between x values -1.23 and -1.085  with y value 3 and density 0.207" type="Bar">
       <sre:active>geom_rect.rect.41.1.7</sre:active>
       <sre:position>7</sre:position>
       <sre:parents>
@@ -385,7 +493,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 8 at -1.32 with value 2" speech2="Bar 8 between x values -1.43 and -1.21  with y value 2 and density 0.0909" type="Bar">
+    <sre:annotation speech="Bar 8 at -1.013 with value 1" speech2="Bar 8 between x values -1.085 and -0.9404  with y value 1 and density 0.0691" type="Bar">
       <sre:active>geom_rect.rect.41.1.8</sre:active>
       <sre:position>8</sre:position>
       <sre:parents>
@@ -395,7 +503,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 9 at -1.1 with value 7" speech2="Bar 9 between x values -1.21 and -0.99  with y value 7 and density 0.318" type="Bar">
+    <sre:annotation speech="Bar 9 at -0.8681 with value 1" speech2="Bar 9 between x values -0.9404 and -0.7957  with y value 1 and density 0.0691" type="Bar">
       <sre:active>geom_rect.rect.41.1.9</sre:active>
       <sre:position>9</sre:position>
       <sre:parents>
@@ -405,7 +513,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 10 at -0.88 with value 4" speech2="Bar 10 between x values -0.99 and -0.77  with y value 4 and density 0.182" type="Bar">
+    <sre:annotation speech="Bar 10 at -0.7234 with value 3" speech2="Bar 10 between x values -0.7957 and -0.651  with y value 3 and density 0.207" type="Bar">
       <sre:active>geom_rect.rect.41.1.10</sre:active>
       <sre:position>10</sre:position>
       <sre:parents>
@@ -415,7 +523,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 11 at -0.66 with value 4" speech2="Bar 11 between x values -0.77 and -0.55  with y value 4 and density 0.182" type="Bar">
+    <sre:annotation speech="Bar 11 at -0.5787 with value 7" speech2="Bar 11 between x values -0.651 and -0.5064  with y value 7 and density 0.484" type="Bar">
       <sre:active>geom_rect.rect.41.1.11</sre:active>
       <sre:position>11</sre:position>
       <sre:parents>
@@ -425,7 +533,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 12 at -0.44 with value 4" speech2="Bar 12 between x values -0.55 and -0.33  with y value 4 and density 0.182" type="Bar">
+    <sre:annotation speech="Bar 12 at -0.434 with value 3" speech2="Bar 12 between x values -0.5064 and -0.3617  with y value 3 and density 0.207" type="Bar">
       <sre:active>geom_rect.rect.41.1.12</sre:active>
       <sre:position>12</sre:position>
       <sre:parents>
@@ -435,7 +543,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 13 at -0.22 with value 5" speech2="Bar 13 between x values -0.33 and -0.11  with y value 5 and density 0.227" type="Bar">
+    <sre:annotation speech="Bar 13 at -0.2894 with value 4" speech2="Bar 13 between x values -0.3617 and -0.217  with y value 4 and density 0.276" type="Bar">
       <sre:active>geom_rect.rect.41.1.13</sre:active>
       <sre:position>13</sre:position>
       <sre:parents>
@@ -445,7 +553,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 14 at -2.22e-16 with value 13" speech2="Bar 14 between x values -0.11 and 0.11  with y value 13 and density 0.591" type="Bar">
+    <sre:annotation speech="Bar 14 at -0.1447 with value 10" speech2="Bar 14 between x values -0.217 and -0.07234  with y value 10 and density 0.691" type="Bar">
       <sre:active>geom_rect.rect.41.1.14</sre:active>
       <sre:position>14</sre:position>
       <sre:parents>
@@ -455,7 +563,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 15 at 0.22 with value 12" speech2="Bar 15 between x values 0.11 and 0.33  with y value 12 and density 0.545" type="Bar">
+    <sre:annotation speech="Bar 15 at 0 with value 10" speech2="Bar 15 between x values -0.07234 and 0.07234  with y value 10 and density 0.691" type="Bar">
       <sre:active>geom_rect.rect.41.1.15</sre:active>
       <sre:position>15</sre:position>
       <sre:parents>
@@ -465,7 +573,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 16 at 0.44 with value 8" speech2="Bar 16 between x values 0.33 and 0.55  with y value 8 and density 0.364" type="Bar">
+    <sre:annotation speech="Bar 16 at 0.1447 with value 5" speech2="Bar 16 between x values 0.07234 and 0.217  with y value 5 and density 0.346" type="Bar">
       <sre:active>geom_rect.rect.41.1.16</sre:active>
       <sre:position>16</sre:position>
       <sre:parents>
@@ -475,7 +583,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 17 at 0.66 with value 8" speech2="Bar 17 between x values 0.55 and 0.77  with y value 8 and density 0.364" type="Bar">
+    <sre:annotation speech="Bar 17 at 0.2894 with value 5" speech2="Bar 17 between x values 0.217 and 0.3617  with y value 5 and density 0.346" type="Bar">
       <sre:active>geom_rect.rect.41.1.17</sre:active>
       <sre:position>17</sre:position>
       <sre:parents>
@@ -485,7 +593,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 18 at 0.88 with value 6" speech2="Bar 18 between x values 0.77 and 0.99  with y value 6 and density 0.273" type="Bar">
+    <sre:annotation speech="Bar 18 at 0.434 with value 7" speech2="Bar 18 between x values 0.3617 and 0.5064  with y value 7 and density 0.484" type="Bar">
       <sre:active>geom_rect.rect.41.1.18</sre:active>
       <sre:position>18</sre:position>
       <sre:parents>
@@ -495,7 +603,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 19 at 1.1 with value 3" speech2="Bar 19 between x values 0.99 and 1.21  with y value 3 and density 0.136" type="Bar">
+    <sre:annotation speech="Bar 19 at 0.5787 with value 4" speech2="Bar 19 between x values 0.5064 and 0.651  with y value 4 and density 0.276" type="Bar">
       <sre:active>geom_rect.rect.41.1.19</sre:active>
       <sre:position>19</sre:position>
       <sre:parents>
@@ -505,7 +613,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 20 at 1.32 with value 2" speech2="Bar 20 between x values 1.21 and 1.43  with y value 2 and density 0.0909" type="Bar">
+    <sre:annotation speech="Bar 20 at 0.7234 with value 7" speech2="Bar 20 between x values 0.651 and 0.7957  with y value 7 and density 0.484" type="Bar">
       <sre:active>geom_rect.rect.41.1.20</sre:active>
       <sre:position>20</sre:position>
       <sre:parents>
@@ -515,7 +623,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 21 at 1.54 with value 6" speech2="Bar 21 between x values 1.43 and 1.65  with y value 6 and density 0.273" type="Bar">
+    <sre:annotation speech="Bar 21 at 0.8681 with value 5" speech2="Bar 21 between x values 0.7957 and 0.9404  with y value 5 and density 0.346" type="Bar">
       <sre:active>geom_rect.rect.41.1.21</sre:active>
       <sre:position>21</sre:position>
       <sre:parents>
@@ -525,7 +633,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 22 at 1.76 with value 0" speech2="Bar 22 between x values 1.65 and 1.87  with y value 0 and density 0" type="Bar">
+    <sre:annotation speech="Bar 22 at 1.013 with value 1" speech2="Bar 22 between x values 0.9404 and 1.085  with y value 1 and density 0.0691" type="Bar">
       <sre:active>geom_rect.rect.41.1.22</sre:active>
       <sre:position>22</sre:position>
       <sre:parents>
@@ -535,7 +643,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 23 at 1.98 with value 0" speech2="Bar 23 between x values 1.87 and 2.09  with y value 0 and density 0" type="Bar">
+    <sre:annotation speech="Bar 23 at 1.157 with value 5" speech2="Bar 23 between x values 1.085 and 1.23  with y value 5 and density 0.346" type="Bar">
       <sre:active>geom_rect.rect.41.1.23</sre:active>
       <sre:position>23</sre:position>
       <sre:parents>
@@ -545,7 +653,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 24 at 2.2 with value 1" speech2="Bar 24 between x values 2.09 and 2.31  with y value 1 and density 0.0455" type="Bar">
+    <sre:annotation speech="Bar 24 at 1.302 with value 3" speech2="Bar 24 between x values 1.23 and 1.374  with y value 3 and density 0.207" type="Bar">
       <sre:active>geom_rect.rect.41.1.24</sre:active>
       <sre:position>24</sre:position>
       <sre:parents>
@@ -555,7 +663,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 25 at 2.42 with value 2" speech2="Bar 25 between x values 2.31 and 2.53  with y value 2 and density 0.0909" type="Bar">
+    <sre:annotation speech="Bar 25 at 1.447 with value 4" speech2="Bar 25 between x values 1.374 and 1.519  with y value 4 and density 0.276" type="Bar">
       <sre:active>geom_rect.rect.41.1.25</sre:active>
       <sre:position>25</sre:position>
       <sre:parents>
@@ -565,7 +673,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 26 at 2.64 with value 1" speech2="Bar 26 between x values 2.53 and 2.75  with y value 1 and density 0.0455" type="Bar">
+    <sre:annotation speech="Bar 26 at 1.591 with value 1" speech2="Bar 26 between x values 1.519 and 1.664  with y value 1 and density 0.0691" type="Bar">
       <sre:active>geom_rect.rect.41.1.26</sre:active>
       <sre:position>26</sre:position>
       <sre:parents>
@@ -575,7 +683,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 27 at 2.86 with value 0" speech2="Bar 27 between x values 2.75 and 2.97  with y value 0 and density 0" type="Bar">
+    <sre:annotation speech="Bar 27 at 1.736 with value 0" speech2="Bar 27 between x values 1.664 and 1.808  with y value 0 and density 0" type="Bar">
       <sre:active>geom_rect.rect.41.1.27</sre:active>
       <sre:position>27</sre:position>
       <sre:parents>
@@ -585,7 +693,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 28 at 3.08 with value 1" speech2="Bar 28 between x values 2.97 and 3.19  with y value 1 and density 0.0455" type="Bar">
+    <sre:annotation speech="Bar 28 at 1.881 with value 1" speech2="Bar 28 between x values 1.808 and 1.953  with y value 1 and density 0.0691" type="Bar">
       <sre:active>geom_rect.rect.41.1.28</sre:active>
       <sre:position>28</sre:position>
       <sre:parents>
@@ -595,7 +703,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 29 at 3.3 with value 1" speech2="Bar 29 between x values 3.19 and 3.41  with y value 1 and density 0.0455" type="Bar">
+    <sre:annotation speech="Bar 29 at 2.025 with value 1" speech2="Bar 29 between x values 1.953 and 2.098  with y value 1 and density 0.0691" type="Bar">
       <sre:active>geom_rect.rect.41.1.29</sre:active>
       <sre:position>29</sre:position>
       <sre:parents>
@@ -605,7 +713,7 @@
       <sre:component/>
       <sre:neighbours/>
     </sre:annotation>
-    <sre:annotation speech="Bar 30 at 3.52 with value 1" speech2="Bar 30 between x values 3.41 and 3.63  with y value 1 and density 0.0455" type="Bar">
+    <sre:annotation speech="Bar 30 at 2.17 with value 1" speech2="Bar 30 between x values 2.098 and 2.242  with y value 1 and density 0.0691" type="Bar">
       <sre:active>geom_rect.rect.41.1.30</sre:active>
       <sre:position>30</sre:position>
       <sre:parents>
@@ -635,6 +743,10 @@
         <sre:passive>graphics-plot-1-bottom-axis-ticks-1.1.2</sre:passive>
         <sre:active>GRID.text.57.1.3</sre:active>
         <sre:passive>graphics-plot-1-bottom-axis-ticks-1.1.3</sre:passive>
+        <sre:active>GRID.text.57.1.4</sre:active>
+        <sre:passive>graphics-plot-1-bottom-axis-ticks-1.1.4</sre:passive>
+        <sre:active>GRID.text.57.1.5</sre:active>
+        <sre:passive>graphics-plot-1-bottom-axis-ticks-1.1.5</sre:passive>
         <sre:active>GRID.text.68.1</sre:active>
         <sre:passive>graphics-plot-1-left-axis-line-1.1</sre:passive>
         <sre:active>GRID.text.61.1.1</sre:active>
@@ -643,6 +755,10 @@
         <sre:passive>graphics-plot-1-left-axis-ticks-1.1.2</sre:passive>
         <sre:active>GRID.text.61.1.3</sre:active>
         <sre:passive>graphics-plot-1-left-axis-ticks-1.1.3</sre:passive>
+        <sre:active>GRID.text.61.1.4</sre:active>
+        <sre:passive>graphics-plot-1-left-axis-ticks-1.1.4</sre:passive>
+        <sre:active>GRID.text.61.1.5</sre:active>
+        <sre:passive>graphics-plot-1-left-axis-ticks-1.1.5</sre:passive>
         <sre:active>geom_rect.rect.41.1.1</sre:active>
         <sre:active>geom_rect.rect.41.1.2</sre:active>
         <sre:active>geom_rect.rect.41.1.3</sre:active>
