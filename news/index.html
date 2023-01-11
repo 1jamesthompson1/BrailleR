@@ -19,19 +19,19 @@
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto"><li class="nav-item">
+  <a class="nav-link" href="../articles/BrailleR.html">Get started</a>
+</li>
+<li class="nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
 <li class="nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="../articles/BrailleRHistory.html">History of the BrailleR package</a>
-    <a class="dropdown-item" href="../articles/Ex1histograms.html">The BrailleR package Example 1</a>
-    <a class="dropdown-item" href="../articles/Ex2BasicNumerical.html">The BrailleR package Example 2</a>
-    <a class="dropdown-item" href="../articles/Ex3UnivariateDescription.html">The BrailleR package Example 3</a>
-    <a class="dropdown-item" href="../articles/Ex4SingleResponseOneGroupingFactor.html">The BrailleR package Example 4</a>
-    <a class="dropdown-item" href="../articles/GettingStarted.html">Getting started with the BrailleR package</a>
+    <a class="dropdown-item" href="../articles/ExploringGraphs.html">Exploring Graphs</a>
     <a class="dropdown-item" href="../articles/IntroWriteR.html">Getting started with the WriteR application</a>
-    <a class="dropdown-item" href="../articles/qplot.html">Testing the VI.ggplot() within the BrailleR package"</a>
+    <a class="dropdown-item" href="../articles/BrailleRHistory.html">History of the BrailleR package</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="../articles/index.html">More articles...</a>
   </div>
 </li>
 <li class="active nav-item">
@@ -68,6 +68,8 @@
 <li>add functionality for winget tools into new winget.R file; should streamline software installation down the track</li>
 <li>deprecated functions relating to Python 2.7 and functions for making slide shows</li>
 <li>updated template files so that chunk options are moved from opening fence to commented lines</li>
+<li>changed to use whisker templates by adding {{.}} around the items that need to be changed</li>
+<li>added a few functions to choose a template and be given some guidance on its use; see ChooseTemplate()</li>
 <li>resolve issue <a href="https://github.com/ajrgodfrey/BrailleR/issues/31" class="external-link">#31</a>, add default shape message.</li>
 <li>resolve issue <a href="https://github.com/ajrgodfrey/BrailleR/issues/34" class="external-link">#34</a>, add information about visible points. It only works at the moment up to point size of 18.</li>
 <li>resolve issue <a href="https://github.com/ajrgodfrey/BrailleR/issues/62" class="external-link">#62</a>, add ggplot support for TimeSeries</li>

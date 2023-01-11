@@ -20,20 +20,20 @@ The method includes representations of summary methods that are more suitable fo
     </button>
 
     <div id="navbar" class="collapse navbar-collapse ms-3">
-      <ul class="navbar-nav me-auto"><li class="active nav-item">
+      <ul class="navbar-nav me-auto"><li class="nav-item">
+  <a class="nav-link" href="../articles/BrailleR.html">Get started</a>
+</li>
+<li class="active nav-item">
   <a class="nav-link" href="../reference/index.html">Reference</a>
 </li>
 <li class="nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="../articles/BrailleRHistory.html">History of the BrailleR package</a>
-    <a class="dropdown-item" href="../articles/Ex1histograms.html">The BrailleR package Example 1</a>
-    <a class="dropdown-item" href="../articles/Ex2BasicNumerical.html">The BrailleR package Example 2</a>
-    <a class="dropdown-item" href="../articles/Ex3UnivariateDescription.html">The BrailleR package Example 3</a>
-    <a class="dropdown-item" href="../articles/Ex4SingleResponseOneGroupingFactor.html">The BrailleR package Example 4</a>
-    <a class="dropdown-item" href="../articles/GettingStarted.html">Getting started with the BrailleR package</a>
+    <a class="dropdown-item" href="../articles/ExploringGraphs.html">Exploring Graphs</a>
     <a class="dropdown-item" href="../articles/IntroWriteR.html">Getting started with the WriteR application</a>
-    <a class="dropdown-item" href="../articles/qplot.html">Testing the VI.ggplot() within the BrailleR package"</a>
+    <a class="dropdown-item" href="../articles/BrailleRHistory.html">History of the BrailleR package</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="../articles/index.html">More articles...</a>
   </div>
 </li>
 <li class="nav-item">
@@ -145,25 +145,24 @@ description is printed.</p>
 <span class="r-in"><span><span class="fu">VI</span><span class="op">(</span><span class="va">PlottedFig</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> This is a histogram, with the title: with the title: Histogram of RandomX</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> "RandomX" is marked on the x-axis.</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Tick marks for the x-axis are at: -4, -2, 0, and 2 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Tick marks for the x-axis are at: -3, -2, -1, 0, 1, 2, and 3 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> There are a total of 500 elements for this variable.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Tick marks for the y-axis are at: 0, 20, 40, 60, 80, and 100 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> It has 15 bins with equal widths, starting at -4 and ending at 3.5 .</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> It has 14 bins with equal widths, starting at -3.5 and ending at 3.5 .</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> The mids and counts for the bins are:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -3.75  count = 2 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -3.25  count = 0 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -2.75  count = 2 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -2.25  count = 11 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -1.75  count = 22 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -1.25  count = 41 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -0.75  count = 74 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -0.25  count = 107 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = 0.25  count = 81 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = 0.75  count = 81 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = 1.25  count = 38 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = 1.75  count = 25 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = 2.25  count = 14 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> mid = 2.75  count = 1 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -3.25  count = 1 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -2.75  count = 5 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -2.25  count = 10 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -1.75  count = 27 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -1.25  count = 45 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -0.75  count = 68 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = -0.25  count = 104 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = 0.25  count = 90 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = 0.75  count = 67 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = 1.25  count = 53 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = 1.75  count = 16 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = 2.25  count = 10 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mid = 2.75  count = 3 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> mid = 3.25  count = 1</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># ggplot</span></span></span>
